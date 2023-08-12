@@ -4,16 +4,12 @@ export default {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      primary: "#A8715A",
-      secondary: "#DD8560",
-      title: "#000000",
-      label: "#555555",
-      bgcolor: "#F8F0E7",
-      bgcolortwo: "#eef1f7",
-      body: "#333333",
-      line: "#E0CFBA",
-      inputbg: "#F9F9F9",
-      offwhite: "#FCFCFC",
+      primary: "#1f1f21",
+      secondary: "#fefefe",
+      bgcolor: "#2ae98d",
+      line: "#808082", 
+      white: "#FCFCFC",
+      offwhite: "#bfbfbf",
     },
   },
   variants: {
