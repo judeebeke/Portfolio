@@ -1,4 +1,5 @@
-import classes from "./navigation.module.css"
+import classes from "./Navigation.module.css";
+
 const Navigation = () => {
   return (
     <nav className='absolute right-0 top-[8rem] border border-line rounded-full px-[4px] py-[4px]'>
