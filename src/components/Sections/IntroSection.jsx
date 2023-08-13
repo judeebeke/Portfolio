@@ -32,7 +32,7 @@ const IntroSection = () => {
           className="absolute top-[3rem] right-[5rem] md:right-[7rem] lg:right-[15rem] xl:right-[23rem] w-[6rem] brand"
           alt="My Projects Icon"
         />
-        <button type="button" role="button" className="absolute top-[5rem] right-[7rem] md:right-[9rem] lg:right-[17rem] xl:right-[25rem] text-3xl text-center text-white">
+        <button type="button" role="button"className="absolute top-[5rem] right-[7rem] md:right-[9rem] lg:right-[17rem] xl:right-[25rem] text-3xl text-center text-white">
                 <AiOutlineArrowDown />
         </button>
       </div>
