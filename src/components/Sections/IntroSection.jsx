@@ -2,6 +2,7 @@ import Navigation from "../Navigation";
 import { iconCircle, sectionTitle } from "../Utils/Style";
 import { LiaHomeSolid } from "react-icons/lia";
 import { AiOutlineArrowDown} from "react-icons/ai";
+import { HiMiniBars2 } from "react-icons/hi2";
 import mpi from "../../assets/mpi.png";
 
 const IntroSection = () => {
@@ -14,9 +15,9 @@ const IntroSection = () => {
           </i>
           <span>INTRODUCE</span>
         </p>
-        <i className={`${iconCircle}`}>B</i>
+        <i className={`${iconCircle} text-white`}><HiMiniBars2 /></i>
       </div>
-      <h2 className="mt-5 text-3xl md:text-4xl lg:text-[2.5rem] text-white">
+      <h2 className="mt-5 text-3xl md:text-4xl lg:text-[2.5rem] lg:leading-10 text-white">
         Say Hi from <span className="text-bgcolor">USER</span>, <br /> Graphics
         Designer and <br /> Web Developer
       </h2>
@@ -28,12 +29,12 @@ const IntroSection = () => {
       <div className="relative w-full">
         <img
           src={mpi}
-          className="absolute top-[3rem] right-[5rem] md:right-[7rem] lg:right-[15rem] xl:right-[23rem] w-[7rem] brand"
+          className="absolute top-[3rem] right-[5rem] md:right-[7rem] lg:right-[15rem] xl:right-[23rem] w-[6rem] brand"
           alt="My Projects Icon"
         />
-        <i className="absolute top-[5.5rem] right-[8rem] md:right-[10rem] lg:right-[18rem] xl:right-[26rem] text-3xl text-center">
-          <AiOutlineArrowDown />
-        </i>
+        <button type="button" role="button" className="absolute top-[5rem] right-[7rem] md:right-[9rem] lg:right-[17rem] xl:right-[25rem] text-3xl text-center text-white">
+                <AiOutlineArrowDown />
+        </button>
       </div>
       <div className="flex justify-center items-center gap-x-5 text-left uppercase leading-none mt-[12rem]">
         <span>

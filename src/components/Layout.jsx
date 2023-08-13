@@ -1,5 +1,8 @@
 import HeroRoot from "./HeroSection/HeroRoot"
+import About from "./Sections/About"
+import Resume from "./Sections/Resume"
 import IntroSection from "./Sections/IntroSection"
+import Skills from "./Sections/Skills"
 
 const Layout = () => {
   return (
@@ -7,6 +10,9 @@ const Layout = () => {
       <HeroRoot />
       <main className="w-3/4 md:w-[58%] lg:w-[60%] xl:w-[65%]">
       <IntroSection />
+      <About />
+      <Resume />
+      <Skills />
       </main>
     </div>
   )

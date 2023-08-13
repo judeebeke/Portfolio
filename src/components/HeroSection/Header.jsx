@@ -1,7 +1,7 @@
 import Button from "../UI/Button";
 import { userImage } from "../../store/localstore";
 import {BsEnvelope} from "react-icons/bs"
-import {AiOulineLinkedin, AiOutlineGithub, AiOutlineTwitter, AiOutlineInstagram} from "react-icons/ai"
+import {AiOutlineLinkedin, AiOutlineGithub, AiOutlineTwitter, AiOutlineInstagram} from "react-icons/ai"
 import { iconCircle } from "../Utils/Style";
 
 const Header = () => {
@@ -18,10 +18,10 @@ const Header = () => {
         </div>
 
   <ul className="flex justify-between items-center gap-2 mt-7 mb-20 text-offwhite">
-    <li className={`${iconCircle}`}><AiOulineLinkedin /></li>
-    <li className={`${iconCircle}`}><AiOutlineGithub /></li>
-    <li className={`${iconCircle}`}>< AiOutlineTwitter /></li>
-    <li className={`${iconCircle}`}><AiOutlineInstagram /></li>
+    <li className={`${iconCircle} text-offwhite`}><AiOutlineLinkedin /></li>
+    <li className={`${iconCircle} text-offwhite`}><AiOutlineGithub /></li>
+    <li className={`${iconCircle} text-offwhite`}><AiOutlineTwitter /></li>
+    <li className={`${iconCircle} text-offwhite`}><AiOutlineInstagram /></li>
   </ul>
     <Button btnText="HIRE ME!" btnIcon={<BsEnvelope />}  />
     </header>
