@@ -4,6 +4,8 @@ import Resume from "./Sections/Resume"
 import IntroSection from "./Sections/IntroSection"
 import Skills from "./Sections/Skills";
 import Services from "./Sections/Services";
+import Portfolio from "./Sections/Portfolio";
+import Testimonial from "./Sections/Testimonial";
 
 const Layout = () => {
   return (
@@ -15,6 +17,8 @@ const Layout = () => {
       <Resume />
       <Services />
       <Skills />
+      <Portfolio />
+      <Testimonial />
       </main>
     </div>
   )

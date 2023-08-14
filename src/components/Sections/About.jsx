@@ -11,10 +11,10 @@ const About = () => {
           <span>ABOUT</span>
         </p>
         <h3 className="mt-5 text-[1.47rem] sm:text-[1.5rem] lg:text-[1.7rem] text-white">
-        Every great design begin with <br /> an even <span className="text-bgcolor">better story</span>
+        Every great design begin with an even <span className="text-bgcolor">better story</span>
         
       </h3>
-      <p className="text-[0.6rem] text-offwhite mt-5 font-extralight leading-5 w-[95%] md:w-[75%] lg:w-[65%] xl:w-[45.7%]">
+      <p className="text-xs text-offwhite mt-5 font-extralight leading-5 w-[85%] md:w-[75%] lg:w-[65%] xl:w-[45.7%]">
         Since beginning my journey as a freelance designer nearly 8 years ago, I&#39;ve done remote work for agencies, consulted for startups, and collaborated with talented people to create digital priducts for both business and consumer use. I&#39;m quietly confident, natuarally curious, and perpetually working on improving my chopsone design problem at a time.
       </p>
     </section>
