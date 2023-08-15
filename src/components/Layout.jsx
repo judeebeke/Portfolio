@@ -6,10 +6,11 @@ import Skills from "./Sections/Skills";
 import Services from "./Sections/Services";
 import Portfolio from "./Sections/Portfolio";
 import Testimonial from "./Sections/Testimonial";
-
+import Brands from "./Sections/Brands";
+import Contact from "./Sections/Contact";
 const Layout = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center px-7 py-5 gap-y-9 text-3xl text-title md:flex-row md:items-start md:justify-between">
+    <div className="w-full flex flex-col justify-center items-center px-10 py-5 gap-y-9 text-3xl text-title md:flex-row lg:items-start md:justify-between">
       <HeroRoot />
       <main className="w-[95] md:w-[58%] lg:w-[60%] xl:w-[65%]">
       <IntroSection />
@@ -19,6 +20,8 @@ const Layout = () => {
       <Skills />
       <Portfolio />
       <Testimonial />
+      <Brands />
+      <Contact />
       </main>
     </div>
   )

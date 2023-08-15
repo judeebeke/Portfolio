@@ -10,6 +10,7 @@ export default {
       line: "#808082", 
       white: "#FCFCFC",
       offwhite: "#bfbfbf",
+      require: "#ff0000",
     },
   },
   variants: {

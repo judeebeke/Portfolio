@@ -45,13 +45,39 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #101316;
-    background-color: #ffffff;
+    color: #fcfcfc;
+    background-color: #1f1f21;
   }
   a:hover {
     color: #f0072e;
   }
   button {
-    background-color: #b4aeae;
+    background-color: #2ae98d;
   }
+}
+
+::-webkit-scrollbar {
+  width: 13px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2ae98d; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2ae98d; /* Color when hovering over the thumb */
+}
+
+
+html {
+  scrollbar-width: auto; /* Width of the scrollbar */
+}
+
+html {
+  scrollbar-color: #2ae98d #fefefe; /* thumb color track color */
+}
+
+html:hover {
+  scrollbar-color: #2ae98d #fefefe; /* thumb color track color */
 }

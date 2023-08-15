@@ -16,7 +16,6 @@ const Header = () => {
           <p className="text-base font-light text-center text-white mt-7">username@twitter.com <br /> Base in Lagos</p>
           <p className="text-[0.6rem] font-extralight text-center text-offwhite mt-5">@2023 User all rights reserved</p>
         </div>
-
   <ul className="flex justify-between items-center gap-2 mt-7 mb-20 text-offwhite">
     <li className={`${iconCircle} text-offwhite`}><AiOutlineLinkedin /></li>
     <li className={`${iconCircle} text-offwhite`}><AiOutlineGithub /></li>
