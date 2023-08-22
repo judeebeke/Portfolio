@@ -36,12 +36,26 @@ const Testimonial = () => {
           flexiable price. Recommended!&#34;
         </p>
 
-        <a href="/"><em className="text-[0.6rem] underline hover:text-bgcolor focus:text-bgcolor duration-300 ease-linear">PROJECT</em></a>
+        <a href="/">
+          <em className="text-[0.6rem] underline hover:text-bgcolor focus:text-bgcolor duration-300 ease-linear">
+            PROJECT
+          </em>
+        </a>
       </div>
       <span className="flex gap-x-2 mt-4 text-white text-center">
-        <button role="navigation" className="flex justify-center items-center bg-primary w-8 h-8 p-1 text-xs rounded-full border border-line"><i><AiOutlineArrowLeft /></i></button>
-        <p className="text-[0.7rem] text-offwhite">1<span className="text-line">/1</span></p>
-        <button role="navigation" className="flex justify-center items-center bg-primary w-8 h-8 p-1 text-xs rounded-full border border-line"><i><AiOutlineArrowRight /></i></button>
+        <button className="flex justify-center items-center bg-primary w-8 h-8 p-1 text-xs rounded-full border border-line">
+          <i>
+            <AiOutlineArrowLeft />
+          </i>
+        </button>
+        <p className="text-[0.7rem] text-offwhite">
+          1<span className="text-line">/1</span>
+        </p>
+        <button className="flex justify-center items-center bg-primary w-8 h-8 p-1 text-xs rounded-full border border-line">
+          <i>
+            <AiOutlineArrowRight />
+          </i>
+        </button>
       </span>
     </section>
   );

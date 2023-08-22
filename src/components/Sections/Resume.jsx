@@ -12,13 +12,13 @@ const Resume = () => {
           <span>RESUME</span>
         </p>
       </div>
-      <h3 className="mt-5 text-[1.47rem] sm:text-[1.5rem] lg:text-[1.7rem] text-white">
+      <h3 className="mt-5 text-[1.47rem] sm:text-[1.5rem] lg:text-[1.7rem] text-white mb-5">
         Experience & <span className="text-bgcolor">Education</span>
       </h3>
-      <div className="relative border-l border-l-line leading-none pl-7 mt-5">
+      <div className="relative flex flex-col gap-y-9 border-l border-l-line leading-none pl-7 ">
         <div>
           <span className="flex items-center">
-            <span className="w-[6.5px] h-[6.5px] absolute -left-[1.27%] top-0 mb-1 rounded-full border border-bgcolor bg-bgcolor "></span>
+            <span className="w-[6.5px] h-[6.5px] absolute -left-[1%] top-0 mb-1 rounded-full border border-bgcolor bg-bgcolor "></span>
             <p className={`text-[0.7rem] text-bgcolor mb-1`}>2020 - Present</p>
           </span>
           <span className="mt-3 flex flex-col gap-y-1">
@@ -30,9 +30,9 @@ const Resume = () => {
             <p className="text-[0.66rem] text-line">Envato Market</p>
           </span>
         </div>
-        <div className="mt-9">
+        <div >
           <span className="flex items-center">
-            <span className="w-[6.5px] h-[6.5px] absolute -left-[1.27%] rounded-full border border-line mb-1 bg-line "></span>
+            <span className="w-[6.5px] h-[6.5px] absolute -left-[1%] rounded-full border border-line mb-1 bg-line "></span>
             <p className={`text-[0.7rem] text-line mb-1`}>2014 - 2019</p>
           </span>
           <span className="mt-3 flex flex-col gap-y-1">
@@ -48,9 +48,9 @@ const Resume = () => {
             <p className="text-[0.66rem] text-line">AHA Marketing Agency</p>
           </span>
         </div>
-        <div className="mt-9">
+        <div >
           <span className="flex items-center">
-            <span className="w-[6.5px] h-[6.5px] absolute -left-[1.27%] rounded-full border border-line mb-1 bg-line "></span>
+            <span className="w-[6.5px] h-[6.5px] absolute -left-[1%] rounded-full border border-line mb-1 bg-line "></span>
             <p className={`text-[0.7rem] text-line mb-1`}>2010 - 2013</p>
             
           </span>

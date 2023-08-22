@@ -17,7 +17,7 @@ const Contact = () => {
       <h3 className="mt-5 text-[1.47rem] sm:text-[1.5rem] lg:text-[1.7rem] text-white">
         Let&#39;s Work <span className="text-bgcolor">Together</span>
       </h3>
-      <form className="w-[25rem] md:w-5/6 lg:w-4/6  flex flex-col justify-between items-start gap-y-3 lg:grid lg:grid-cols-2 lg:gap-x-5">
+      <form className="w-[25rem] md:w-5/6 lg:w-4/6 mt-5 flex flex-col justify-between items-start gap-y-3 lg:grid lg:grid-cols-2 lg:gap-x-5">
         <div className="flex flex-col w-full items-start">
           <label htmlFor="fullname" className="text-[0.6rem] text-white">
             FULL NAME <sup className="text-require text-[0.6rem]">*</sup>
@@ -25,7 +25,6 @@ const Contact = () => {
           <input
             id="fullname"
             type="text"
-            role="textbox"
             name="fullname"
             className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white bg-primary text-white text-sm focus:bg-primary"
             placeholder="Your full name"
@@ -38,7 +37,6 @@ const Contact = () => {
           <input
             id="email"
             type="email"
-            role="email"
             name="email"
             className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white bg-primary text-white text-sm focus:bg-primary"
             placeholder="Your email address"
@@ -51,9 +49,8 @@ const Contact = () => {
           <input
             id="phone"
             type="phone"
-            role="phone"
             name="phone"
-            className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white bg-primary text-white text-sm focus:bg-primary"
+            className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white focus:ring-primary bg-primary text-white text-sm focus:bg-primary"
             placeholder="Your phone number"
           />
         </div>
@@ -64,20 +61,18 @@ const Contact = () => {
           <input
             id="subject"
             type="subject"
-            role="subject"
             name="subject"
-            className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white bg-primary text-white text-sm focus:bg-primary"
+            className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white focus:ring-primary bg-primary text-white text-sm focus:bg-primary"
             placeholder="Your message subject"
           />
         </div>
         <div className="flex flex-col w-full items-start mb-7 md:col-span-2">
           <label htmlFor="message" className="text-[0.6rem] text-white">
-            MESSAGE 
+            MESSAGE
           </label>
           <textarea
             id="message"
             type="message"
-            role="message"
             name="message"
             rows={5}
             className="w-full outline-none border-b border-b-line hover:border-b-white focus:border-b-white bg-primary text-white text-sm focus:bg-primary"
