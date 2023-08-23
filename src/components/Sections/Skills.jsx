@@ -1,9 +1,6 @@
-import { sectionTitle } from "../Utils/Style"
-import {TbBulb, TbBrandPython} from "react-icons/tb"
-import {SiJavascript} from "react-icons/si"
-import {FaLinux, FaReact} from "react-icons/fa"
-import {AiOutlineGithub, AiOutlineHtml5} from "react-icons/ai"
-import {BiLogoCss3} from "react-icons/bi"
+import { sectionTitle } from "../Utils/Style";
+import {TbBulb} from "react-icons/tb";
+import { skills } from "../../store/localstore";
 
 const Skills = () => {
   return (
@@ -20,34 +17,14 @@ const Skills = () => {
        My <span className="text-bgcolor">Advantages</span>
       </h3>
       <div className="w-full mt-5 flex flex-wrap justify-start items-center gap-y-4 gap-x-4 md:gap-x-15 md:w-5/6 lg:w-4/6">
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><TbBrandPython /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">Python</p>
+       {skills.map(skill => {
+        return (
+        <span key={skill.id} className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
+        <i className="text-4xl text-white mt-2">{skill.icon}</i>
+        <p className="text-[0.6rem] text-bgcolor mt-2">{skill.title}</p>
         </span>
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><SiJavascript /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">JavaScript</p>
-        </span>
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><FaReact /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">React</p>
-        </span>
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><AiOutlineGithub /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">Github</p>
-        </span>
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><FaLinux /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">Linux</p>
-        </span>
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><AiOutlineHtml5 /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">HTML5</p>
-        </span>
-        <span className="flex flex-col justify-between items-center text-center py-5 h-[7.5rem] w-[5.5rem] rounded-full border border-line hover:border-bgcolor duration-300 ease-linear">
-        <i className="text-4xl text-white mt-2"><BiLogoCss3 /></i>
-        <p className="text-[0.6rem] text-bgcolor mt-2">CSS3</p>
-        </span>
+        )
+       })}
       </div>
       </section>
   )

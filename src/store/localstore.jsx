@@ -4,15 +4,18 @@ import {
   AiOutlineGithub,
   AiOutlineTwitter,
   AiOutlineInstagram,
-  AiOutlineUser,
+  AiOutlineUser, AiOutlineHtml5
 } from "react-icons/ai";
 import { LiaHomeSolid } from "react-icons/lia";
 import { MdOutlinePermContactCalendar, MdOutlineDesignServices, MdOutlineDeveloperMode } from "react-icons/md";
-import { BiCollection, BiBook } from "react-icons/bi";
+import { BiCollection, BiBook, BiLogoCss3 } from "react-icons/bi";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { TbBulb } from "react-icons/tb";
 import { LuBookOpenCheck } from "react-icons/lu";
 import {RiSeoLine} from "react-icons/ri";
+import { TbBrandPython} from "react-icons/tb"
+import {SiJavascript} from "react-icons/si"
+import {FaLinux, FaReact} from "react-icons/fa"
 
 import testimonialImg from "../assets/testimonial.jpg";
 
@@ -130,4 +133,14 @@ export const testimonial = [
   { id: "recom1", name: "Paublo Escobar", image: testimonialImg, post: "CEO of", company: "IBM Global", comment: "'User - A Developer with the creativity, professional and master of code. Much more than what i'm expect. High quality product & flexiable price. Recommended!'", projectLink: "https://dispezo.vercel.app/" },
   { id: "recom2", name: "Matt De'Caprio", image: testimonialImg, post: "Software Eng. at", company: "Erricson Motors", comment: "'User - A Developer with the creativity, professional and master of code. Much more than what i'm expect. High quality product & flexiable price. Recommended!'", projectLink: "https://dispezo.vercel.app/" },
   { id: "recom3", name: "Wammi Agbero", image: testimonialImg, post: "Vawulence Eng. at", company: "Vawulence Mechanics", comment: "'User - A Developer with Agba skill and professionalism, wey sabi code linke winch. Much more than what i'm expect.Nah senior man work him dey do for quality product & flexiable price. I Recommended am!'", projectLink: "https://dispezo.vercel.app/" },
+];
+
+export const skills = [
+  { id: "skill1", title: "Python", icon: <TbBrandPython /> },
+  { id: "skill2", title: "JavaScript", icon: <SiJavascript /> },
+  { id: "skill3", title: "React", icon: <FaReact /> },
+  { id: "skill4", title: "Github", icon: <AiOutlineGithub /> },
+  { id: "skill6", title: "Linux", icon: <FaLinux /> },
+  { id: "skill7", title: "HTML5", icon: <AiOutlineHtml5 /> },
+  { id: "skill5", title: "CSS3", icon: <BiLogoCss3 /> },
 ];

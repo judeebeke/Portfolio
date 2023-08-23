@@ -17,7 +17,7 @@ const Contact = () => {
       <h3 className="mt-5 text-[1.47rem] sm:text-[1.5rem] lg:text-[1.7rem] text-white">
         Let&#39;s Work <span className="text-bgcolor">Together</span>
       </h3>
-      <form className="w-[25rem] md:w-5/6 lg:w-4/6 mt-5 flex flex-col justify-between items-start gap-y-3 lg:grid lg:grid-cols-2 lg:gap-x-5">
+      <form className="w-full md:w-5/6 lg:w-4/6 mt-5 flex flex-col justify-between items-start gap-y-3 lg:grid lg:grid-cols-2 lg:gap-x-5">
         <div className="flex flex-col w-full items-start">
           <label htmlFor="fullname" className="text-[0.6rem] text-white">
             FULL NAME <sup className="text-require text-[0.6rem]">*</sup>
