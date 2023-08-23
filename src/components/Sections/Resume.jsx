@@ -21,7 +21,7 @@ const Resume = () => {
         return (
           <div key={item.id}>
           <span className="flex items-center">
-          <span className={`w-[6.5px] h-[6.5px] absolute -left-[1%] ${index === 0 && "top-0"} mb-1 rounded-full border border-bgcolor bg-bgcolor`}></span>
+          <span className={`w-[6.5px] h-[6.5px] absolute -left-[1.2%] sm:-left-[1.1%] md:-left-[1%] ${index === 0 && "top-0"} mb-1 rounded-full border border-bgcolor bg-bgcolor`}></span>
             <p className={`text-[0.7rem] text-bgcolor mb-1`}>{item.period}</p>
           </span>
           {
