@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "../Navigation";
 import { iconCircle, sectionTitle } from "../Utils/Style";
 import { LiaHomeSolid } from "react-icons/lia";
@@ -7,8 +8,12 @@ import mpi from "../../assets/mpi.png";
 import ScrollButton from "../UI/ScrollButton";
 
 const IntroSection = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
-    <section className="relative w-full flex flex-col justify-between items-start mt-5">
+    <section
+      id="home"
+      className="relative w-full flex flex-col justify-between items-start mt-5"
+    >
       <div className="flex justify-between w-full items-center">
         <p className={`${sectionTitle}`}>
           <i>
@@ -16,7 +21,12 @@ const IntroSection = () => {
           </i>
           <span>INTRODUCE</span>
         </p>
-        <i className={`${iconCircle} text-white`}>
+       <i
+          className={`${iconCircle} ${isOpenMenu ? "text-bgcolor" : "text-white"}`}
+          onClick={() => {
+            setIsOpenMenu((prev) => !prev);
+          }}
+        >
           <HiMiniBars2 />
         </i>
       </div>
@@ -34,7 +44,7 @@ const IntroSection = () => {
           className="absolute top-[3rem] right-[5rem] md:right-[7rem] lg:right-[15rem] xl:right-[23rem] w-[6rem] brand"
           alt="My Projects Icon"
         />
-        <ScrollButton>
+        <ScrollButton id="projects">
           <i className="absolute top-[5rem] right-[7rem] md:right-[9rem] lg:right-[17rem] xl:right-[25rem] text-3xl text-center text-white hover:text-bgcolor">
             <AiOutlineArrowDown />
           </i>
@@ -56,7 +66,7 @@ const IntroSection = () => {
           </p>
         </span>
       </div>
-      <Navigation />
+      {isOpenMenu && <Navigation openMenu={isOpenMenu} setOpenMenu={setIsOpenMenu} />}
     </section>
   );
 };

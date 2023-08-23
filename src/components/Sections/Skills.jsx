@@ -7,7 +7,7 @@ import {BiLogoCss3} from "react-icons/bi"
 
 const Skills = () => {
   return (
-    <section className="relative w-full flex flex-col justify-between items-start mt-20">
+    <section id="skills" className="relative w-full flex flex-col justify-between items-start mt-20">
       <div className="flex justify-between w-full items-center">
         <p className={`${sectionTitle}`}>
           <i>

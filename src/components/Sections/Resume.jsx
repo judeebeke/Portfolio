@@ -1,9 +1,10 @@
 import { BiBook } from "react-icons/bi";
 import { sectionTitle } from "../Utils/Style";
+import { resume } from "../../store/localstore";
 
 const Resume = () => {
   return (
-    <section className="relative w-full flex flex-col justify-between items-start mt-20">
+    <section id="resume" className="relative w-full flex flex-col justify-between items-start mt-20">
       <div className="flex justify-between w-full items-center">
         <p className={`${sectionTitle}`}>
           <i>
@@ -16,49 +17,26 @@ const Resume = () => {
         Experience & <span className="text-bgcolor">Education</span>
       </h3>
       <div className="relative flex flex-col gap-y-9 border-l border-l-line leading-none pl-7 ">
-        <div>
+      {resume.map((item, index) => {
+        return (
+          <div key={item.id}>
           <span className="flex items-center">
-            <span className="w-[6.5px] h-[6.5px] absolute -left-[1%] top-0 mb-1 rounded-full border border-bgcolor bg-bgcolor "></span>
-            <p className={`text-[0.7rem] text-bgcolor mb-1`}>2020 - Present</p>
+          <span className={`w-[6.5px] h-[6.5px] absolute -left-[1%] ${index === 0 && "top-0"} mb-1 rounded-full border border-bgcolor bg-bgcolor`}></span>
+            <p className={`text-[0.7rem] text-bgcolor mb-1`}>{item.period}</p>
           </span>
-          <span className="mt-3 flex flex-col gap-y-1">
-            <h6 className="text-base text-white">Framer Designer & Developer</h6>
-            <p className="text-[0.66rem] text-line">Brunodee Agency</p>
-          </span>
-          <span className="mt-3 flex flex-col gap-y-1">
-            <h6 className="text-base text-white">Front-End WordPress Developer</h6>
-            <p className="text-[0.66rem] text-line">Envato Market</p>
-          </span>
+          {
+            item.position.map(post => {
+              return (
+                <span key={post.id} className="mt-3 flex flex-col gap-y-1">
+                <h6 className="text-base text-white">{post.post}</h6>
+                <p className="text-[0.66rem] text-line">{post.company}</p>
+              </span>
+              )
+            })
+          }
         </div>
-        <div >
-          <span className="flex items-center">
-            <span className="w-[6.5px] h-[6.5px] absolute -left-[1%] rounded-full border border-line mb-1 bg-line "></span>
-            <p className={`text-[0.7rem] text-line mb-1`}>2014 - 2019</p>
-          </span>
-          <span className="mt-3 flex flex-col gap-y-1">
-            <h6 className="text-base text-white">Webflow Develper & Co-Founder</h6>
-            <p className="text-[0.66rem] text-line">Designflow Studio</p>
-          </span>
-          <span className="mt-3 flex flex-col gap-y-1">
-            <h6 className="text-base text-white">Web Designer</h6>
-            <p className="text-[0.66rem] text-line">Freelance</p>
-          </span>
-          <span className="mt-3 flex flex-col gap-y-1">
-            <h6 className="text-base text-white">Leader Team of Marketing</h6>
-            <p className="text-[0.66rem] text-line">AHA Marketing Agency</p>
-          </span>
-        </div>
-        <div >
-          <span className="flex items-center">
-            <span className="w-[6.5px] h-[6.5px] absolute -left-[1%] rounded-full border border-line mb-1 bg-line "></span>
-            <p className={`text-[0.7rem] text-line mb-1`}>2010 - 2013</p>
-            
-          </span>
-          <span className="mt-3 flex flex-col gap-y-1">
-            <h6 className="text-base text-white">Bachelor Degree of Information Technology</h6>
-            <p className="text-[0.66rem] text-line">Envato Market</p>
-          </span>
-        </div>
+        )
+      })}
       </div>
     </section>
   );

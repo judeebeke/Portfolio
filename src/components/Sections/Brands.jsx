@@ -4,7 +4,7 @@ import logo3 from "../../assets/logo3.png";
 
 const Brands = () => {
   return (
-    <section className="w-full flex flex-col justify-between items-start mt-20">
+    <section id="brands" className="w-full flex flex-col justify-between items-start mt-20">
     <p className="text-sm text-white">
       Worked For Some Brands and Companies.
     </p>

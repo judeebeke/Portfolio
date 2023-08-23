@@ -3,7 +3,7 @@ import { AiOutlineUser } from "react-icons/ai";
 
 const About = () => {
   return (
-    <section className="relative w-full flex flex-col justify-between items-start mt-20">
+    <section id="about" className="relative w-full flex flex-col justify-between items-start mt-20">
        <p className={`${sectionTitle}`}>
           <i>
             <AiOutlineUser />

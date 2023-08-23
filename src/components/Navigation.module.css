@@ -9,7 +9,6 @@
     background-color: #424244;
     color: #fff;
     text-align: center;
-    
     border-radius: 2px;
     padding: 3px 10px;
     position: absolute;
@@ -24,7 +23,7 @@
   .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 75%;
+    top: 65%;
   left: 89%; 
   margin-top: -5px;
   border-width: 2px;

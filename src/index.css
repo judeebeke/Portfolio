@@ -37,9 +37,36 @@ body {
   }
 }
 
+@keyframes menu-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+}
+
+@keyframes testimonial-fade {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+   opacity: 1;
+   scale: 1;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .brand {
     animation: logo-spin infinite 20s linear;
+  }
+
+  .nav-animate {
+    animation: menu-fade 1s linear;
+  }
+  .testimonial-animate {
+    animation: testimonial-fade 1.3s linear;
   }
 }
 
